@@ -1,0 +1,14 @@
+[
+    {
+        cmd: "bun run build",
+        watch: [
+            "./src/app.ts"
+        ]
+    },
+    {
+        cmd: "tsc --noEmit",
+        watch: [
+            "src"
+        ]
+    }
+]

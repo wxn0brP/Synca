@@ -1,0 +1,28 @@
+{
+	"name": "synca",
+	"version": "0.0.1",
+	"main": "src/index.ts",
+	"description": "",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wxn0brP/synca.git"
+	},
+	"homepage": "https://github.com/wxn0brP/synca",
+	"author": "wxn0brP",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"build": "bun build src/app.ts --outdir=dist --minify --sourcemap",
+		"bun": "bun run src/index.ts"
+	},
+	"devDependencies": {
+		"@types/bun": "*",
+		"typescript": "*"
+	},
+	"dependencies": {
+		"@wxn0brp/db": "^0.41.0",
+		"@wxn0brp/db-crdt": "^0.0.5",
+		"@wxn0brp/falcon-frame": "^0.5.9",
+		"@wxn0brp/flanker-ui": "^0.4.6"
+	}
+}

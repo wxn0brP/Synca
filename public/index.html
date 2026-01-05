@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <title>Synca | {{dir}}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <section class="create-section">
+            <header>
+                <div class="brand">
+                    <h1>Synca</h1>
+                    <div id="sync-indicator" class="sync-badge" title="Click to Sync">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Ready</span>
+                    </div>
+                </div>
+                <p class="subtitle">Stay synchronized.</p>
+            </header>
+
+            <form id="todo-form">
+                <div class="input-group">
+                    <input type="text" id="todo-input" placeholder=" " required autocomplete="off">
+                    <label for="todo-input">New Task</label>
+                </div>
+                <button type="submit" class="add-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    <span>Add Task</span>
+                </button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <div class="list-header">
+                <h2>Your Tasks</h2>
+                <span id="task-count">0 tasks</span>
+            </div>
+            <ul id="todo-list"></ul>
+        </section>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
